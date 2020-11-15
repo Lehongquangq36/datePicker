@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatePicker</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="wrapper__header">
+            <section id="banner-month">
+                <div class="pre__month slider__month">
+                    <a href="#" onclick="previousCalendar()">
+                        <i class="fa fa-caret-left"></i>
+                    </a>
+                    <span class="pre__month--name" id="pre__month--name">
+                        
+                    </span>
+                </div>
+                <div class="month__main">
+                    <span class="month__main--name" id="main__month--name"></span>
+                </div>
+                <div class="next__month slider__month">
+                    <span class="next__month--name" id="next__month--name">
+                        <!-- 2020.12 -->
+                    </span>
+                    <a href="#" onclick="nextCalendar()">
+                        <i class="fa fa-caret-right"></i>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <section id="calendar" class="wrapper__weekdays">
+            <table>
+                <thead id="weekdays">
+                    <td class="sunday" id="sunday">Sun</td>
+                    <td>Mon</td>
+                    <td>Tue</td>
+                    <td>Wed</td>
+                    <td>Thu</td>
+                    <td>Fri</td>
+                    <td class="saturday">Sat</td> 
+                </thead>
+                <tbody id="date">
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
